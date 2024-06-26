@@ -38,6 +38,7 @@
     delta = {
       enable = true;
       options = {
+        syntax-theme = "Monokai Extended";
         features = "coracias-caudatus";
         navigate = true;
         light = false;

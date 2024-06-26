@@ -31,8 +31,39 @@
 
   shell = {
     # General
+
     g = "git ";
-    cd ="z";
+    cd = "z";
+
+    l = "eza -l --icons --git -a";
+    ltr = "eza --tree --level=2 --long --icons --git";
+
+    f = "open .";
+    cl = "clear";
+
+    # Dirs
+    ".." = "cd ..";
+    "..." = "cd ../..";
+    "...." = "cd ../../..";
+    "....." = "cd ../../../..";
+    "......" = "cd ../../../../..";
+    "--" = "cd -";
+
+    #Network
+    ip = "dig +short myip.opendns.com @resolver1.opendns.com";
+    localip = "ipconfig getifaddr en0";
+    copyssh = "pbcopy < $HOME/.ssh/ed25519_24.pub";
+
+    # Print each PATH entry on a separate line
+    #path = "echo -e ${PATH//:/\\n}";
+
+    flushd = "dscacheutil -flushcache && killall -HUP mDNSResponder";
+    lscleanup = "/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder";
+
+    # Hide/show all desktop icons (useful when presenting)
+    hidedesktop = "defaults write com.apple.finder CreateDesktop -bool false && killall Finder";
+    showdesktop = "defaults write com.apple.finder CreateDesktop -bool true && killall Finder";
+
     diff = "diff --color=auto";
     grep = "grep --color=auto";
     szsh = "source ~/.zshrc";
@@ -41,13 +72,24 @@
     # kubectl
     k = "kubectl";
     kx = "kubectx";
+    ka = "kubectl apply -f";
+    kg = "kubectl get";
+    kd = "kubectl describe";
+    kdel = "kubectl delete";
+    kl = "kubectl logs";
+    kgp = "kubectl get pod";
+    kgd = "kubectl get deployments";
+    ke = "kubectl exec -it";
 
     # Direnv helpers
     da = "direnv allow";
     dr = "direnv reload";
     dk = "direnv revoke";
+
     nvim ="/Users/zeeshans/nvim-macos-arm64/bin/nvim";
     vim = "nvim";
+    v = "vim";
+    yt = "yt-dlp";
 
     # Nix stuff. Inspired by: https://alexfedoseev.com/blog/post/nix-time.
 
@@ -65,6 +107,7 @@
     nfs = "nix flake show";
     nfu = "nix flake update";
     nsn = "nix search nixpkgs";
+    nixg = "sudo nix-collect-garbage -d";
     updateNix = "sudo nixos-rebuild switch --flake .#hostname";
     updateHome = "sudo -i nix-channel --update && home-manager switch --flake .#user@hostname";
 

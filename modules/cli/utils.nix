@@ -19,8 +19,13 @@
   # Fancy replacement for cat
   programs.bat = {
     enable = true;
-    extraPackages = with pkgs.bat-extras; [ batdiff batman batgrep batwatch ];
+    extraPackages = with pkgs.bat-extras; [ batdiff batman batgrep batwatch prettybat];
     syntaxes = { };
+    config = {
+      tabs = "4";
+      theme = "Catppuccin Mocha";
+    };
+
     themes = {
       dracula = {
         src = pkgs.fetchFromGitHub {
@@ -30,6 +35,15 @@
           sha256 = "019hfl4zbn4vm4154hh3bwk6hm7bdxbr1hdww83nabxwjn99ndhv";
         };
         file = "Dracula.tmTheme";
+      };
+      "Catppuccin Mocha" = {
+        src = pkgs.fetchFromGitHub {
+          owner = "catppuccin";
+          repo = "bat";
+          rev = "d714cc1d358ea51bfc02550dabab693f70cccea0";
+          sha256 = "sha256-Q5B4NDrfCIK3UAMs94vdXnR42k4AXCqZz6sRn8bzmf4=";
+        };
+        file = "themes/Catppuccin Mocha.tmTheme";
       };
     };
   };

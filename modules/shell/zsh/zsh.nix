@@ -8,6 +8,13 @@
     syntaxHighlighting.enable = true;
     autosuggestion.enable = true;
     shellAliases = (import ../aliases.nix { inherit pkgs; }).shell;
+
+    dirHashes = {
+      config = "$HOME/.config/";
+      desk = "$HOME/Desktop";
+      nixc = "$HOME/nix-config";
+    };
+
     #initExtra = "${builtins.readFile ../config/zsh/config.zsh}";
     initExtraFirst = ''
       eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -27,13 +34,28 @@
       zstyle ':fzf-tab:*' switch-group ',' '.'
 
       # Bind Keys
-      bindkey '^[[A' history-beginning-search-backward
-      bindkey '^[[B' history-beginning-search-forward
+      bindkey '^[[A' history-substring-search-up
+      bindkey '^[[B' history-substring-search-down
+
       bindkey '⌥<-' backward-word
       bindkey '⌥->' forward-word
       bindkey '⌘⌫' backward-kill-line
       bindkey '⌘z' undo
       bindkey '⌘⇪z' redo
+
+      # handy keybindings
+      #bindkey "^A" beginning-of-line
+      #bindkey "^E" end-of-line
+      #bindkey "^K" kill-line
+      #bindkey "^R" history-incremental-search-backward
+
+      # Navigate words with ctrl+arrow keys
+      #bindkey '^[Oc' forward-word                                     #
+      #bindkey '^[Od' backward-word                                    #
+      #bindkey '^[[1;5D' backward-word                                 #
+      #bindkey '^[[1;5C' forward-word                                  #
+      #bindkey '^H' backward-kill-word                                 # delete previous word with ctrl+backspace
+      #bindkey '^[[Z' undo                                             # Shift+tab undo last action
 
     config() {
      # navigate to the config file for a specific app

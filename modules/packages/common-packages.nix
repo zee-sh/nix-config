@@ -2,6 +2,7 @@
 
 with pkgs; [
   any-nix-shell # fish support for nix shell
+  awscli2
   bat
   difftastic # https://github.com/Wilfred/difftastic
   #devenv
@@ -11,6 +12,7 @@ with pkgs; [
   gh
   gnupg
   jq
+  k9s
   kubectl
   kubectx
   #kubernetes-helm
@@ -26,12 +28,12 @@ with pkgs; [
   tldr
   tmux
   wget
-  #wezterm
   yq-go # Terminal `jq` for YAML
   yt-dlp
   zsh
 
   # network
+  aria # cli downloader
   bandwidth # Modern Unix `iftop`
   bmon # Modern Unix `iftop`at
   curl
@@ -46,6 +48,6 @@ with pkgs; [
   tcping-go # https://github.com/cloverstd/tcping
   tcptraceroute
   speedtest-cli
-  trippy # https://github.com/fujiapple852/trippy # https://trippy.cli.rs/
+  trippy # mtr alternative # https://github.com/fujiapple852/trippy # https://trippy.cli.rs/
 
 ]
