@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   programs.zsh = {
@@ -72,12 +72,9 @@
       share = true;
       ignorePatterns = [
         #"(ls|cd|pwd|exit|mcd|dr)*"
-        "git commit*"
-        "git clone*"
-        "git add*"
         #"history*"
       ];
-      #path = "${config.xdg.dataHome}/zsh/zsh_history";
+      path  = "${config.xdg.configHome}/zsh/history";
     };
 
     plugins = [

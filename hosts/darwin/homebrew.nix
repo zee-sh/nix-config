@@ -43,6 +43,7 @@
       "rectangle"
       #"setapp"
       "skype"
+      "soulver-cli"
       "vlc"
       #"little-snitch"
       #"utm" # Virtual Machine Manager
