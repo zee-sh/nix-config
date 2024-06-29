@@ -9,11 +9,17 @@
     enableNushellIntegration = true;
     enableZshIntegration = true;
     flags = [ "--disable-up-arrow" ];
+    #settings = {
+    #  enter_accept = true;
+    #  search_mode = "fuzzy";
+    #  style = "full";
+    #};
   };
 
   programs.direnv = {
     enable = true;
     nix-direnv.enable = true;
+    enableZshIntegration = true;
   };
 
   # Fancy replacement for cat
@@ -48,9 +54,15 @@
     };
   };
 
+  programs.bottom = {
+    enable = true;
+  };
+  
   # Replacement for ls
   programs.eza = {
     enable = true;
+    git = true;
+    icons = true;
     enableZshIntegration = true;
     enableFishIntegration = true;
 
@@ -77,6 +89,9 @@
     defaultOptions = [
       "--color=light"
     ];
+    tmux = {
+      enableShellIntegration = true;
+    };
   };
 
   programs.zoxide = {

@@ -1,5 +1,6 @@
 {
   config,
+  lib, 
   pkgs,
   ...
 }:
@@ -15,10 +16,9 @@
       pull.rebase = true;
     };
 
-    ignores = [".DS_Store" "*~" "*.swp"];
+    ignores = lib.splitString "\n" (builtins.readFile ./gitignore_global);
     includes = [];
 
-    aliases = {};
     signing = {
       key = "~/.ssh/ed25519_24.pub";
       signByDefault = true;
@@ -46,11 +46,10 @@
         side-by-side = true;
       };
     };
-
     aliases = {
       fix = "commit --amend --no-edit";
       oops = "reset HEAD~1";
-
+    };
     lfs.enable = true;
   };
 

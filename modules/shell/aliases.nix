@@ -36,7 +36,9 @@
     cd = "z";
 
     l = "eza -l --icons --git -a";
-    ltr = "eza --tree --level=2 --long --icons --git";
+    ltr = "eza -lh --tree --git --icons=auto";
+
+    fzp = "fzf --preview 'bat --style=numbers --color=always {}'";
 
     f = "open .";
     cl = "clear";
@@ -69,6 +71,9 @@
     szsh = "source ~/.zshrc";
     tf = "terraform";
 
+    # AWS
+    awsid = "aws sts get-caller-identity --query Account --output text";
+
     # kubectl
     k = "kubectl";
     kx = "kubectx";
@@ -98,9 +103,10 @@
     xx = "darwin-rebuild switch --flake .";
 
     # Run Nix garbage collection
-    xgc = "nix store gc -v";
+    ngc = "nix store gc -v";
 
     # Nix flake helpers
+    ndev = "nix develop";
     ndc = "nix develop --command";
     nfc = "nix flake check";
     nfca = "nix flake check --all-systems";
@@ -111,6 +117,9 @@
     updateNix = "sudo nixos-rebuild switch --flake .#hostname";
     updateHome = "sudo -i nix-channel --update && home-manager switch --flake .#user@hostname";
 
+    #nhs = "home-manager switch --flake '.#${username}@${hostName}'";
+    #nxh = "nixos-rebuild switch --flake '.#${hostName}'";
+    #nds = "darwin-rebuild switch --flake '.#${hostName}'";
 
     # Restart Nix daemon
     rnd = "sudo launchctl unload /Library/LaunchDaemons/org.nixos.nix-daemon.plist && sudo launchctl load /Library/LaunchDaemons/org.nixos.nix-daemon.plist";

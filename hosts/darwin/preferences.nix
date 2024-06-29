@@ -5,6 +5,7 @@
   #networking.computerName = "${pkgs.username}-${pkgs.system}";
   # https://github.com/zmre/nix-config/blob/main/modules/darwin/preferences.nix
   # https://github.com/neapsix/.dotfiles/blob/master/macos_setup/macos_setup.sh
+  # https://github.com/LnL7/nix-darwin/tree/master/modules/system/defaults
 
   system.defaults = {
 
@@ -42,7 +43,7 @@
 
     screencapture = {
       disable-shadow = true;
-      location = "/Users/zeeshans/Documents";
+      location = "/Users/zeeshans/Downloads";
     };
 
     NSGlobalDomain = {

@@ -57,10 +57,17 @@
       #bindkey '^H' backward-kill-word                                 # delete previous word with ctrl+backspace
       #bindkey '^[[Z' undo                                             # Shift+tab undo last action
 
+      zle -N fzf-search-files
+      bindkey '^F' fzf-search-files
+
+      # shift-tab : go backward in menu (invert of tab)
+      bindkey '^[[Z' reverse-menu-complete
+
     config() {
      # navigate to the config file for a specific app
      cd "$XDG_CONFIG_HOME/$1" || echo "$1 is not a valid config directory."
      }
+
   '';
     history = {
       expireDuplicatesFirst = true;

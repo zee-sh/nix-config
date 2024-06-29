@@ -12,11 +12,6 @@ with pkgs; [
   gh
   gnupg
   jq
-  k9s
-  kubectl
-  kubectx
-  #kubernetes-helm
-  kubetail
   lazygit
   magic-wormhole # https://github.com/magic-wormhole/magic-wormhole
   neofetch
@@ -32,11 +27,22 @@ with pkgs; [
   yt-dlp
   zsh
 
+  # Kubernetes / Docker
+  k9s
+  #krew
+  kubectl
+  kubectx
+  #kubernetes-helm
+  kubetail
+  lazydocker
+  stern
+ 
   # network
   aria # cli downloader
   bandwidth # Modern Unix `iftop`
   bmon # Modern Unix `iftop`at
   curl
+  dog # https://github.com/ogham/dog
   gping
   httpie
   ipcalc
@@ -49,5 +55,6 @@ with pkgs; [
   tcptraceroute
   speedtest-cli
   trippy # mtr alternative # https://github.com/fujiapple852/trippy # https://trippy.cli.rs/
+  xh # https://github.com/ducaale/xh
 
 ]

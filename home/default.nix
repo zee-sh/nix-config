@@ -2,6 +2,7 @@
 {
   imports = [ 
     ../modules/cli/utils.nix
+    ../modules/cli/git/git.nix
     ../modules/cli/tmux.nix
     ../modules/cli/starship.nix
     ../modules/shell/zsh/zsh.nix
