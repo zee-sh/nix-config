@@ -2,7 +2,6 @@
 
 with pkgs; [
   any-nix-shell # fish support for nix shell
-  awscli2
   bat
   difftastic # https://github.com/Wilfred/difftastic
   #devenv
@@ -26,6 +25,12 @@ with pkgs; [
   yq-go # Terminal `jq` for YAML
   yt-dlp
   zsh
+
+  # Cloud
+  awscli2
+  #aws-nuke
+  eksctl
+  steampipe
 
   # Kubernetes / Docker
   k9s

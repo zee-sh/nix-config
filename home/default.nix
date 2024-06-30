@@ -26,5 +26,9 @@
 
   home.packages = import ../modules/packages/default.nix { inherit pkgs; };
   home.shellAliases = (import ../modules/shell/aliases.nix { inherit pkgs; }).shell;
+
+  home.sessionVariables = {
+    AWS_PAGER = "${pkgs.bat}/bin/bat -p --color=always -l json";
+  };
   
 }
