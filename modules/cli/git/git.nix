@@ -38,8 +38,11 @@
     delta = {
       enable = true;
       options = {
-        syntax-theme = "Monokai Extended";
-        features = "coracias-caudatus";
+        syntax-theme = "Dracula";
+        features = "side-by-side line-numbers decorations";
+        decorations = "commit-decoration file-style";
+        commit-decoration-style = "blue box ul";
+        file-style = "blue ul";
         navigate = true;
         light = false;
         line-numbers = true;

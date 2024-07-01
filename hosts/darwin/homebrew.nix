@@ -9,57 +9,55 @@
     brews = [
       "coreutils"
       "cowsay"
-      #"devutils"
       "m-cli" #  Swiss Army Knife for macOS
       "mas" # mas-cli
     ];
     casks = [
-      #"1password"
+      "1password"
       "alt-tab"	
       "appcleaner"
-      #"authy"
+      "authy"
       "blurred"
       "balenaetcher"
-      #"brave-browser"
-      #"cold-turkey-blocker"
-      #"docker"
-      #"firefox"
+      "brave-browser"
+      "cold-turkey-blocker"
+      "docker"
+      "firefox"
       "flux"
-      #"google-chrome"
+      "google-chrome"
       "hammerspoon"
       "hazel"
-      "hyperkey"
-      #"iina" # video player
+      #"hyperkey"
+      "iina" # video player
       "jordanbaird-ice"
+      "kindle"
       #"little-snitch"
       "LuLu"
-      #"microsoft-teams"
-      #"microsoft-remote-desktop"
+      "microsoft-teams"
+      "microsoft-remote-desktop"
       "micro-snitch"
       #"mitmproxy"
       #"monitorcontrol" # Brightness and volume controls for external monitors.
-      #"obsidian"
+      "obsidian"
       "raycast"
       "rectangle"
-      #"setapp"
+      "setapp"
       "skype"
+      "slack"
       "soulver-cli"
-      "vlc"
-      #"little-snitch"
-      #"utm" # Virtual Machine Manager
+      "todoist"
+      #"vlc"
+      "utm" # Virtual Machine Manager
       "visual-studio-code"
       "wezterm"
-      #"whatsapp"
-      #wireshark
+      "whatsapp"
+      #"wireshark"
       "zoom"
     ];
     masApps = {
       #"one-thing" = 1604176982;
       #"hyperduck" =6444667067;
-      #Slack = 803453959;
-      #"Kindle" = 302584613;
       #"Tailscale" = 1475387142;
-      #"Todoist" = 585829637;
       #"Dropover" = 1355679052;
       #"LosslessCut" = 1505323402;
     };
