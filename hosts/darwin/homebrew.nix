@@ -47,7 +47,7 @@
       "soulver-cli"
       "todoist"
       #"vlc"
-      "utm" # Virtual Machine Manager
+      #"utm" # Virtual Machine Manager
       "visual-studio-code"
       "wezterm"
       "whatsapp"

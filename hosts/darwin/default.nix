@@ -6,6 +6,8 @@
   # $ nix-env -qaP | grep wget
   environment.systemPackages =
   [ pkgs.vim
+    pkgs.devenv
+    pkgs.cachix
   ];
 
   # Auto upgrade nix package and the daemon service.
@@ -29,7 +31,7 @@
     shell = pkgs.zsh;
   };
 
-  security.pam.enableSudoTouchIdAuth = true;
+  security.pam.enableSudoTouchIdAuth = false;
 
   # zsh is the default shell on Mac and we want to make sure that we're
   # configuring the rc correctly with nix-darwin paths.
