@@ -31,7 +31,7 @@
     shell = pkgs.zsh;
   };
 
-  security.pam.enableSudoTouchIdAuth = false;
+  security.pam.enableSudoTouchIdAuth = true;
 
   # zsh is the default shell on Mac and we want to make sure that we're
   # configuring the rc correctly with nix-darwin paths.

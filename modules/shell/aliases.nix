@@ -38,7 +38,12 @@
     l = "eza -l --icons --git -a";
     ltr = "eza -lh --tree --git --icons=auto";
 
-    fzp = "fzf --preview 'bat --style=numbers --color=always {}'";
+    nvim ="/Users/zeeshans/nvim-macos-arm64/bin/nvim";
+    vim = "nvim";
+    v = "vim";
+ 
+    fzp = "fzf -m --preview 'bat --style=numbers --color=always {}'";
+    vinv = "v $(fzp)";
 
     f = "open .";
     cl = "clear";
@@ -69,7 +74,10 @@
     diff = "diff --color=auto";
     grep = "grep --color=auto";
     szsh = "source ~/.zshrc";
+
     tf = "terraform";
+    pl = "pulumi";
+
 
     # AWS
     awsid = "aws sts get-caller-identity --query Account --output text";
@@ -91,9 +99,6 @@
     dr = "direnv reload";
     dk = "direnv revoke";
 
-    nvim ="/Users/zeeshans/nvim-macos-arm64/bin/nvim";
-    vim = "nvim";
-    v = "vim";
     yt = "yt-dlp";
 
     # Nix stuff. Inspired by: https://alexfedoseev.com/blog/post/nix-time.

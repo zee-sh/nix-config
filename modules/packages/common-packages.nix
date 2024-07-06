@@ -32,6 +32,11 @@ with pkgs; [
   eksctl
   steampipe
 
+  # IAC
+  opentofu
+  pulumi
+  #terraform
+
   # Kubernetes / Docker
   k9s
   #krew

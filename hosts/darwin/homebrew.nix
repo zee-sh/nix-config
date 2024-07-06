@@ -16,7 +16,7 @@
       "1password"
       "alt-tab"	
       "appcleaner"
-      "authy"
+      #"authy"
       "blurred"
       "balenaetcher"
       "brave-browser"
