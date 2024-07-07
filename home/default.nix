@@ -4,6 +4,7 @@
     ../modules/cli/utils.nix
     ../modules/cli/git/git.nix
     ../modules/cli/tmux.nix
+    ../modules/cli/zellij.nix
     ../modules/cli/starship.nix
     ../modules/shell/zsh/zsh.nix
     ../modules/shell/fish/fish.nix

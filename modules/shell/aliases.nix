@@ -32,8 +32,9 @@
   shell = {
     # General
 
-    g = "git ";
     cd = "z";
+    g = "git ";
+    lg = "lazygit";
 
     l = "eza -l --icons --git -a";
     ltr = "eza -lh --tree --git --icons=auto";
@@ -48,6 +49,8 @@
     f = "open .";
     cl = "clear";
 
+    st1 = "export STARSHIP_CONFIG=~/projects/personal/nix-config/config/starship1.toml";
+
     # Dirs
     ".." = "cd ..";
     "..." = "cd ../..";
@@ -60,6 +63,7 @@
     ip = "dig +short myip.opendns.com @resolver1.opendns.com";
     localip = "ipconfig getifaddr en0";
     copyssh = "pbcopy < $HOME/.ssh/ed25519_24.pub";
+    addssh = "ssh-add  ~/.ssh/ed25519 --apple-use-keychain --apple-load-keychain";
 
     # Print each PATH entry on a separate line
     #path = "echo -e ${PATH//:/\\n}";
