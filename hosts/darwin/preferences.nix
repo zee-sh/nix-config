@@ -32,7 +32,8 @@
 
     finder = {
       AppleShowAllExtensions = true;
-      #FXDefaultSearchScope = "SCcf";
+      FXDefaultSearchScope = "SCcf"; # This magic string makes it search the current folder by default
+      FXPreferredViewStyle = "clmv"; # Use the column view by default-- the obviously correct and best view
       FXEnableExtensionChangeWarning = false;
       ShowPathbar = true;
       ShowStatusBar = true; # show status bar

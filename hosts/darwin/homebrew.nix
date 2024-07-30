@@ -22,6 +22,7 @@
       "brave-browser"
       "cold-turkey-blocker"
       "docker"
+      "drawio"
       "firefox"
       "flux"
       "google-chrome"
@@ -42,12 +43,13 @@
       "raycast"
       "rectangle"
       "setapp"
+      "shottr"
       "skype"
       "slack"
       "soulver-cli"
       "todoist"
       #"vlc"
-      #"utm" # Virtual Machine Manager
+      "utm" # Virtual Machine Manager
       "visual-studio-code"
       "wezterm"
       "whatsapp"

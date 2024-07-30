@@ -3,6 +3,8 @@
 with pkgs; [
   any-nix-shell # fish support for nix shell
   bat
+  comma # https://github.com/nix-community/comma - Runs software without installing it. 
+  croc # https://github.com/schollz/croc - File transfer
   difftastic # https://github.com/Wilfred/difftastic
   #devenv
   fd
@@ -44,9 +46,10 @@ with pkgs; [
   kubectx
   #kubernetes-helm
   kubetail
+  #kubens
   lazydocker
   stern
- 
+
   # network
   aria # cli downloader
   bandwidth # Modern Unix `iftop`

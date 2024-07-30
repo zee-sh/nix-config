@@ -95,6 +95,7 @@
     kdel = "kubectl delete";
     kl = "kubectl logs";
     kgp = "kubectl get pod";
+    kgpa = "kubectl get pods --all-namespaces";
     kgd = "kubectl get deployments";
     ke = "kubectl exec -it";
 

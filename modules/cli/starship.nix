@@ -47,7 +47,7 @@
         truncation_length = 3;
       };
       nix_shell = {
-        format = "[($name \\(develop\\) <- )$symbol]($style) ";
+        format = " [( $name <- )$symbol]($style) ";
         impure_msg = "";
         symbol = " ";
         style = "bold red";
@@ -73,7 +73,7 @@
         format = "on [$symbol$active(/$project)(\\($region\\))]($style)";
       };
       aws = {
-        format = "on [$symbol$profile(\\($region\\))]($style)";
+        format = " [$symbol$profile(\\($region\\))]($style)";
       };
 
       # Icon changes only \/
