@@ -3,17 +3,30 @@
 {
   homebrew = {
     enable = true;
-    onActivation.cleanup = "uninstall";
+    global = {
+      autoUpdate = true;
+    };
 
-    taps = [];
+    onActivation = {
+      autoUpdate = true;
+      upgrade = true;
+      cleanup = "uninstall";
+    };
+
+    taps = [
+      "nikitabobko/tap"
+    ];
+
     brews = [
       "coreutils"
       "cowsay"
       "m-cli" #  Swiss Army Knife for macOS
       "mas" # mas-cli
     ];
+
     casks = [
       "1password"
+      "aerospace"
       "alt-tab"	
       "appcleaner"
       #"authy"
@@ -21,6 +34,8 @@
       "balenaetcher"
       "brave-browser"
       "cold-turkey-blocker"
+      "cursor"
+      "discord"
       "docker"
       "drawio"
       "firefox"
@@ -33,6 +48,7 @@
       "jordanbaird-ice"
       "kindle"
       #"little-snitch"
+      "linear-linear"
       "LuLu"
       "microsoft-teams"
       "microsoft-remote-desktop"

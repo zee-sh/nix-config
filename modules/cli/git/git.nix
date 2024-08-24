@@ -49,10 +49,10 @@
         side-by-side = true;
       };
     };
-    aliases = {
-      fix = "commit --amend --no-edit";
-      oops = "reset HEAD~1";
-    };
+    aliases = (import ../../shell/aliases.nix { inherit pkgs; }).git;
+      #fix = "commit --amend --no-edit";
+      #oops = "reset HEAD~1";
+    #};
     lfs.enable = true;
   };
 

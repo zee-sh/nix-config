@@ -33,9 +33,18 @@
     # General
 
     cd = "z";
-    g = "git ";
     lg = "lazygit";
+    g = "git ";
+    ga = "git add";
+    gco = "git checkout";
+    gcm = "git checkout main";
+    gd = "git diff";
+    gds = "git diff --staged";
+    gst	= "git status";
+    gl = "git log";
+    gpr = "git pull --rebase";
 
+ 
     l = "eza -l --icons --git -a";
     ltr = "eza -lh --tree --git --icons=auto";
 
@@ -81,10 +90,13 @@
 
     tf = "terraform";
     pl = "pulumi";
+    plp = "pulumi preview";
+
 
 
     # AWS
-    awsid = "aws sts get-caller-identity --query Account --output text";
+    aid = "aws sts get-caller-identity --query Account --output text";
+    asl = "aws sso login";
 
     # kubectl
     k = "kubectl";
