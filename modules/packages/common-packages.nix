@@ -5,6 +5,7 @@ with pkgs; [
   bat
   comma # https://github.com/nix-community/comma - Runs software without installing it. 
   croc # https://github.com/schollz/croc - File transfer
+  devbox
   difftastic # https://github.com/Wilfred/difftastic
   #devenv
   fd
@@ -12,6 +13,7 @@ with pkgs; [
   git
   gh
   gnupg
+  go-task
   jq
   lazygit
   magic-wormhole # https://github.com/magic-wormhole/magic-wormhole
@@ -37,17 +39,26 @@ with pkgs; [
   # IAC
   opentofu
   pulumi
+  crd2pulumi
   #terraform
 
+  #DevSecOps
+  checkov
+
   # Kubernetes / Docker
+  cilium-cli
+  hubble # https://github.com/cilium/hubble/
+  k3d
   k9s
-  #krew
+  kind
+  krew
   kubectl
   kubectx
+  kubefetch # https://github.com/jkulzer/kubefetch
   #kubernetes-helm
   kubetail
-  #kubens
   lazydocker
+  popeye
   stern
 
   # network

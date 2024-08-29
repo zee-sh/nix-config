@@ -8,7 +8,7 @@
     enableZshIntegration = true;
     settings = {
       format = "$directory$character";
-      right_format = "$git_branch$git_commit$git_state$git_status$aws$nix_shell$cmd_duration$shlvl";
+      right_format = "$git_branch$git_commit$git_state$git_status$kubernetes$aws$nix_shell$cmd_duration$shlvl";
 
       add_newline=false;
       command_timeout = 1000;
@@ -23,11 +23,13 @@
         format = "[$user]($style)";
         #show_always = true;
       };
+
       hostname = {
         format = "[@$hostname]($style) ";
         ssh_only = true;
         style = "bold green";
       };
+
       shlvl = {
         #format = "[$shlvl]($style) ";
         format = "[$symbol $shlvl]($style)";
@@ -36,6 +38,7 @@
         #repeat = true;
         disabled = false;
       };
+
       cmd_duration = {
         format = "[$duration]($style) ";
       };
@@ -46,11 +49,19 @@
         format = "[$path ]($style)[$read_only]($read_only_style)";
         truncation_length = 3;
       };
+
       nix_shell = {
         format = " [( $name <- )$symbol]($style) ";
         impure_msg = "";
         symbol = " ";
         style = "bold red";
+      };
+
+      kubernetes = {
+        symbol = "⎈ ";
+        format = " [$symbol$context( \\($namespace\\))]($style) ";
+        style = "bright-blue";
+        disabled = false;
       };
 
       character = {

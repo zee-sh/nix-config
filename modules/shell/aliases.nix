@@ -44,6 +44,9 @@
     gl = "git log";
     gpr = "git pull --rebase";
 
+    t = "task";
+    tl = "task --list-all";
+
  
     l = "eza -l --icons --git -a";
     ltr = "eza -lh --tree --git --icons=auto";

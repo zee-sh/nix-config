@@ -20,6 +20,10 @@
       eval "$(/opt/homebrew/bin/brew shellenv)"
     '';
     initExtra = ''
+      alias k=kubectl
+      source <(kubectl completion zsh)
+      compdef k='kubectl'
+ 
       HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND="bg=yellow,fg=black,bold"
       HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND="bg=red,fg=black,bold"
 

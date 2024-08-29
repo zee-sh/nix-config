@@ -63,6 +63,7 @@
       "skype"
       "slack"
       "soulver-cli"
+      "syncthing"
       "todoist"
       #"vlc"
       "utm" # Virtual Machine Manager
