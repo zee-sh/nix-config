@@ -16,6 +16,10 @@
     };
 
     #initExtra = "${builtins.readFile ../config/zsh/config.zsh}";
+    envExtra = ''
+    alias assume="source assume"
+    export GRANTED_ALIAS_CONFIGURED="true"
+    '';
     initExtraFirst = ''
       eval "$(/opt/homebrew/bin/brew shellenv)"
     '';

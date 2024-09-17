@@ -5,8 +5,10 @@ with pkgs; [
   bat
   comma # https://github.com/nix-community/comma - Runs software without installing it. 
   croc # https://github.com/schollz/croc - File transfer
+  delta # https://github.com/dandavison/delta
   devbox
   difftastic # https://github.com/Wilfred/difftastic
+  dogoo # https://github.com/mr-karan/doggo
   #devenv
   fd
   fzf
@@ -32,14 +34,16 @@ with pkgs; [
 
   # Cloud
   awscli2
-  #aws-nuke
+  aws-nuke
   eksctl
+  hcloud
   steampipe
 
   # IAC
   opentofu
   pulumi
   crd2pulumi
+  packer
   #terraform
 
   #DevSecOps
@@ -47,25 +51,31 @@ with pkgs; [
 
   # Kubernetes / Docker
   cilium-cli
+  #crane
+  #dive
   hubble # https://github.com/cilium/hubble/
   k3d
   k9s
   kind
   krew
+  kubecolor
   kubectl
   kubectx
   kubefetch # https://github.com/jkulzer/kubefetch
-  #kubernetes-helm
+  kubernetes-helm
   kubetail
   lazydocker
   popeye
   stern
+  talosctl
+  tilt
 
   # network
   aria # cli downloader
   bandwidth # Modern Unix `iftop`
   bmon # Modern Unix `iftop`at
   curl
+  curlie
   dog # https://github.com/ogham/dog
   gping
   httpie

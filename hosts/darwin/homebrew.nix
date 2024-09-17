@@ -15,11 +15,13 @@
 
     taps = [
       "nikitabobko/tap"
+      "common-fate/granted"
     ];
 
     brews = [
       "coreutils"
       "cowsay"
+      "granted"
       "m-cli" #  Swiss Army Knife for macOS
       "mas" # mas-cli
     ];
@@ -29,6 +31,7 @@
       "aerospace"
       "alt-tab"	
       "appcleaner"
+      "aptakube"
       #"authy"
       "blurred"
       "balenaetcher"
@@ -43,12 +46,14 @@
       "google-chrome"
       "hammerspoon"
       "hazel"
+      #"headlamp" # k8s UI
       #"hyperkey"
       "iina" # video player
       "jordanbaird-ice"
       "kindle"
       #"little-snitch"
       "linear-linear"
+      "linearmouse"
       "LuLu"
       "microsoft-teams"
       "microsoft-remote-desktop"
