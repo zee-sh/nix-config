@@ -8,7 +8,7 @@ with pkgs; [
   delta # https://github.com/dandavison/delta
   devbox
   difftastic # https://github.com/Wilfred/difftastic
-  dogoo # https://github.com/mr-karan/doggo
+  #dogoo # https://github.com/mr-karan/doggo
   #devenv
   fd
   fzf

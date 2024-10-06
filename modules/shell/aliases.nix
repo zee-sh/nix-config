@@ -101,11 +101,14 @@
     aid = "aws sts get-caller-identity --query Account --output text";
     asl = "aws sso login";
 
+    # Cilium
+    cil = "cilium";
+
     # kubectl 
     ## https://github.com/ahmetb/kubectl-aliases/blob/master/.kubectl_aliases
     ## https://github.com/LongerHV/nixos-configuration/blob/e3251efce564330977ff2555648982f126c26327/modules/home-manager/myHome/zsh/kubectl.zsh
 
-    ## General aliases
+    ## General aliases
     k = "kubectl";
     kx = "kubectx";
     kns = "kubens";

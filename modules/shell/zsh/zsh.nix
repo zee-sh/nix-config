@@ -19,6 +19,8 @@
     envExtra = ''
     alias assume="source assume"
     export GRANTED_ALIAS_CONFIGURED="true"
+    fpath=(/Users/zeeshans/.granted/zsh_autocomplete/assume/ $fpath)
+    fpath=(/Users/zeeshans/.granted/zsh_autocomplete/granted/ $fpath)
     '';
     initExtraFirst = ''
       eval "$(/opt/homebrew/bin/brew shellenv)"

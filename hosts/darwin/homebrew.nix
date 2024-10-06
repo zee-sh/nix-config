@@ -16,6 +16,7 @@
     taps = [
       "nikitabobko/tap"
       "common-fate/granted"
+      "pulumi/tap"
     ];
 
     brews = [
@@ -24,6 +25,9 @@
       "granted"
       "m-cli" #  Swiss Army Knife for macOS
       "mas" # mas-cli
+      "node"
+      "pulumi"
+      "crd2pulumi"
     ];
 
     casks = [
