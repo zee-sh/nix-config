@@ -11,7 +11,7 @@
   ];
 
   # Auto upgrade nix package and the daemon service.
-  services.nix-daemon.enable = true;
+  #services.nix-daemon.enable = true;
   # nix.package = pkgs.nix;
 
   # Necessary for using flakes on this system.
@@ -31,7 +31,7 @@
     shell = pkgs.zsh;
   };
 
-  security.pam.enableSudoTouchIdAuth = true;
+  security.pam.services.sudo_local.touchIdAuth = true;
 
   # zsh is the default shell on Mac and we want to make sure that we're
   # configuring the rc correctly with nix-darwin paths.
@@ -39,13 +39,17 @@
   programs.fish.enable = true;
 
   environment.shells = with pkgs; [ bashInteractive zsh fish ];
-  environment.loginShell = pkgs.zsh;
   
   # Fonts
-  fonts.packages = with pkgs; [
-     recursive
-     (nerdfonts.override { fonts = [ "JetBrainsMono" "FiraCode" "SourceCodePro" "Inconsolata"]; })
+  fonts.packages = [
+     pkgs.nerd-fonts.jetbrains-mono
+     pkgs.nerd-fonts.fira-code
+     pkgs.nerd-fonts.sauce-code-pro
+     pkgs.nerd-fonts.inconsolata
    ];
+
+   # for all fonts
+   # fonts.packages = [ ... ] ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts)
 
   # Store management
   nix.gc.automatic = true;

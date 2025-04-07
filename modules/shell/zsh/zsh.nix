@@ -17,6 +17,7 @@
 
     #initExtra = "${builtins.readFile ../config/zsh/config.zsh}";
     envExtra = ''
+    export DISABLE_TELEMETRY="true"
     alias assume="source assume"
     export GRANTED_ALIAS_CONFIGURED="true"
     fpath=(/Users/zeeshans/.granted/zsh_autocomplete/assume/ $fpath)

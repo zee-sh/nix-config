@@ -20,6 +20,7 @@
     ];
 
     brews = [
+      "cloud-nuke"
       "coreutils"
       "cowsay"
       "granted"
@@ -28,6 +29,7 @@
       "node"
       "pulumi"
       "crd2pulumi"
+      "pulumi/tap/esc"
     ];
 
     casks = [
@@ -36,7 +38,7 @@
       "alt-tab"	
       "appcleaner"
       "aptakube"
-      #"authy"
+      "betterdisplay"
       "blurred"
       "balenaetcher"
       "brave-browser"
@@ -50,7 +52,7 @@
       "google-chrome"
       "hammerspoon"
       "hazel"
-      #"headlamp" # k8s UI
+      "headlamp" # k8s UI
       #"hyperkey"
       "iina" # video player
       "jordanbaird-ice"
@@ -58,12 +60,14 @@
       #"little-snitch"
       "linear-linear"
       "linearmouse"
+      "lookaway"
       "LuLu"
       "microsoft-teams"
       "microsoft-remote-desktop"
       "micro-snitch"
       #"mitmproxy"
       #"monitorcontrol" # Brightness and volume controls for external monitors.
+      "morgen"
       "obsidian"
       "raycast"
       "rectangle"

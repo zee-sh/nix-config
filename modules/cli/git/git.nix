@@ -22,7 +22,7 @@
     signing = {
       key = "~/.ssh/ed25519_24.pub";
       signByDefault = true;
-      gpgPath = "";
+      signer = "";
     };
     extraConfig = {
       init = {defaultBranch = "main";};

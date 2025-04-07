@@ -24,6 +24,7 @@ with pkgs; [
   pre-commit
   procs # https://github.com/dalance/procs
   ripgrep
+  superfile
   terminal-notifier # https://github.com/julienXX/terminal-notifier
   tldr
   tmux
@@ -31,6 +32,11 @@ with pkgs; [
   yq-go # Terminal `jq` for YAML
   yt-dlp
   zsh
+
+  #software-development
+  go
+  golangci-lint
+  
 
   # Cloud
   awscli2
@@ -44,10 +50,11 @@ with pkgs; [
   pulumi
   crd2pulumi
   packer
-  #terraform
+  terraform
 
   #DevSecOps
   checkov
+  trivy
 
   # Kubernetes / Docker
   cilium-cli

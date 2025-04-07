@@ -100,6 +100,7 @@
     # AWS
     aid = "aws sts get-caller-identity --query Account --output text";
     asl = "aws sso login";
+    ael = "aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws";
 
     # Cilium
     cil = "cilium";
