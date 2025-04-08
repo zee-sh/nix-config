@@ -89,7 +89,7 @@ with pkgs; [
   ipcalc
   iperf3
   mtr # Modern Unix `traceroute`
-  nexttrace # https://github.com/nxtrace/NTrace-core
+  #nexttrace # https://github.com/nxtrace/NTrace-core
   nmap
   tcpflow # https://github.com/simsong/tcpflow
   tcping-go # https://github.com/cloverstd/tcping
